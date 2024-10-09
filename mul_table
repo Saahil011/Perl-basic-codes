@@ -1,0 +1,20 @@
+use 5.38.2;
+use strict;
+use warnings;
+
+sub multable{
+        my($a)=@_;
+
+        for my $i(1..10)
+        {
+            print "$i x $a= ",$a*$i,"\t";
+        }        
+        print"\n";
+}
+sub onetoten{
+    for my $a(1..10)
+    {
+        multable($a);
+    }
+}
+onetoten();
